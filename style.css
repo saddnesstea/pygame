@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(111deg, #8636A3, #534EC1);
+    color: black;
+}
+
+header {
+    background-color: #E0E0E0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 25px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar select {
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-right: 5px;
+    background: #f0f0f0;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.search-bar button {
+    height: 40px;
+    width: 40px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar button img {
+    height: 20px;
+    width: 20px;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+aside {
+    width: 20%;
+    padding: 20px;
+    background: transparent;
+}
+
+aside h1 {
+    font-size: 1.5em;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+.products {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15%; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+}
